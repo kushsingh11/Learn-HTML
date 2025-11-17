@@ -15,11 +15,25 @@ export default function App() {
         initialRouteName="Home"
         screenOptions={{
           headerShown: false,
+          gestureEnabled: true,
+          cardStyle: { backgroundColor: '#f5f5f5' },
         }}
       >
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="LessonDetail" component={LessonDetailScreen} />
-        <Stack.Screen name="CodeEditor" component={CodeEditorScreen} />
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="LessonDetail"
+          component={LessonDetailScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="CodeEditor"
+          component={CodeEditorScreen}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
