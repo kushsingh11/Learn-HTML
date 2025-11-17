@@ -146,10 +146,6 @@ ${htmlCode}
                 originWhitelist={['*']}
                 source={{ html: getFullHTML(code) }}
                 style={styles.webview}
-                javaScriptEnabled
-                domStorageEnabled
-                startInLoadingState={false}
-                scalesPageToFit={false}
               />
             </View>
           </View>
